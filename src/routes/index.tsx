@@ -1,26 +1,218 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { Layout } from "@/components/site/Layout";
+import { AuroraGraphic } from "@/components/site/AuroraGraphic";
+import { ArrowRight, ShieldCheck, Clock, Handshake, Workflow } from "lucide-react";
 
 export const Route = createFileRoute("/")({
-  component: Index,
+  head: () => ({
+    meta: [
+      { title: "Zetus AI — Your business. Powered by agents." },
+      {
+        name: "description",
+        content:
+          "Zetus AI deploys intelligent AI agents that perceive your operations, decide and act on your behalf — 24 hours a day.",
+      },
+      { property: "og:title", content: "Zetus AI — Your business. Powered by agents." },
+      {
+        property: "og:description",
+        content:
+          "Agentic AI for Indian businesses. Reliable, always on, engineered to last.",
+      },
+    ],
+  }),
+  component: Home,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
+const problems = [
+  "Reports compiled manually",
+  "Alerts discovered too late",
+  "Decisions made on yesterday's data",
+  "Follow-ups missed",
+  "Payments delayed",
+];
 
-function Index() {
-  return <PlaceholderIndex />;
+const cards = [
+  {
+    icon: ShieldCheck,
+    title: "Reliable",
+    body:
+      "Every system built with multiple verification layers — accurate output every single time.",
+  },
+  {
+    icon: Clock,
+    title: "Always on",
+    body:
+      "Your agents run 24 hours a day, 7 days a week, 365 days a year. No breaks. No delays.",
+  },
+  {
+    icon: Handshake,
+    title: "Long term partner",
+    body:
+      "We do not build and disappear. We stay — monitoring, improving, and expanding as your business grows.",
+  },
+  {
+    icon: Workflow,
+    title: "Zero disruption",
+    body:
+      "Your team keeps working exactly as they do today. We work around your existing operations.",
+  },
+];
+
+function Home() {
+  return (
+    <Layout>
+      {/* Hero */}
+      <section className="relative overflow-hidden bg-hero">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 pb-24 pt-20 md:grid-cols-2 md:pt-28">
+          <div className="animate-fade-up">
+            <h1 className="text-4xl font-semibold leading-[1.1] tracking-tight text-foreground md:text-6xl">
+              Your business.
+              <br />
+              <span className="text-primary">Powered by agents.</span>
+            </h1>
+            <p className="mt-6 max-w-xl text-base text-subtle md:text-lg">
+              Zetus AI deploys intelligent AI agents that perceive your
+              operations, make decisions, and act on your behalf — 24 hours a
+              day.
+            </p>
+            <div className="mt-9">
+              <Link
+                to="/contact"
+                className="inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3.5 text-sm font-medium text-primary-foreground shadow-glow-strong transition-all hover:bg-primary-hover hover:shadow-glow"
+              >
+                Book a Free Discovery Call <ArrowRight size={16} />
+              </Link>
+            </div>
+          </div>
+          <div className="relative mx-auto h-72 w-72 animate-fade-in md:h-[420px] md:w-[420px]">
+            <AuroraGraphic />
+          </div>
+        </div>
+      </section>
+
+      {/* Problem */}
+      <section className="border-t border-border">
+        <div className="mx-auto max-w-4xl px-5 py-24">
+          <h2 className="text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
+            Sound familiar?
+          </h2>
+          <ul className="mt-10 space-y-4">
+            {problems.map((p) => (
+              <li
+                key={p}
+                className="flex items-center gap-4 rounded-lg border border-border bg-card/40 px-5 py-4 text-base text-foreground"
+              >
+                <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+                {p}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-10 text-xl font-semibold text-primary md:text-2xl">
+            This is what we eliminate.
+          </p>
+        </div>
+      </section>
+
+      {/* What we do */}
+      <section className="border-t border-border bg-card/30">
+        <div className="mx-auto max-w-5xl px-5 py-24">
+          <h2 className="text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
+            What Zetus AI does
+          </h2>
+          <div className="mt-12 grid gap-5 md:grid-cols-3">
+            {[
+              { n: "01", t: "Analyse", d: "We analyse your operations and identify what can run automatically." },
+              { n: "02", t: "Build", d: "We build it. We monitor it. We improve it." },
+              { n: "03", t: "Deliver", d: "You wake up informed. Your business runs — even when you don't." },
+            ].map((s) => (
+              <div
+                key={s.n}
+                className="rounded-xl border border-border bg-card p-6"
+              >
+                <div className="text-sm font-mono text-primary">{s.n}</div>
+                <div className="mt-3 text-lg font-semibold text-foreground">
+                  {s.t}
+                </div>
+                <p className="mt-2 text-sm text-subtle">{s.d}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-12 max-w-2xl space-y-4 text-base text-subtle">
+            <p>You wake up informed.</p>
+            <p>Your team focuses on what matters.</p>
+            <p>Your business runs — even when you don't.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Why us */}
+      <section className="border-t border-border">
+        <div className="mx-auto max-w-6xl px-5 py-24">
+          <h2 className="text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
+            Why Zetus AI
+          </h2>
+          <div className="mt-12 grid gap-5 md:grid-cols-2">
+            {cards.map(({ icon: Icon, title, body }) => (
+              <div
+                key={title}
+                className="group rounded-xl border border-border bg-card p-7 transition-all hover:border-primary/60 hover:shadow-glow"
+              >
+                <Icon className="text-primary" size={22} />
+                <h3 className="mt-4 text-lg font-semibold text-foreground">
+                  {title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-subtle">{body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonial */}
+      <section className="border-t border-border">
+        <div className="mx-auto max-w-5xl px-5 py-20">
+          <div className="relative overflow-hidden rounded-2xl bg-card p-10 md:p-14">
+            <div className="absolute -left-2 -top-6 select-none font-serif text-[10rem] leading-none text-primary/30">
+              “
+            </div>
+            <blockquote className="relative text-xl font-medium leading-relaxed text-foreground md:text-2xl">
+              Our morning operations review used to take 2 hours. Now the report
+              arrives on my phone automatically before I leave home. My team
+              focuses on actual work instead of compiling data.
+            </blockquote>
+            <div className="relative mt-8 text-sm text-subtle">
+              — Business owner, Pune manufacturing company
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="border-t border-border bg-hero">
+        <div className="mx-auto max-w-3xl px-5 py-24 text-center">
+          <h2 className="text-3xl font-semibold tracking-tight text-foreground md:text-5xl">
+            Ready to see what's possible?
+          </h2>
+          <p className="mx-auto mt-6 max-w-xl text-base text-subtle md:text-lg">
+            Book a free 30 minute discovery call. No commitment. No technical
+            jargon. Just a conversation about your business.
+          </p>
+          <div className="mt-9 flex flex-col items-center gap-4">
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3.5 text-sm font-medium text-primary-foreground shadow-glow-strong transition-all hover:bg-primary-hover"
+            >
+              Book a Free Discovery Call <ArrowRight size={16} />
+            </Link>
+            <a
+              href="mailto:hello@zetusai.com"
+              className="text-sm text-subtle hover:text-foreground"
+            >
+              hello@zetusai.com
+            </a>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  );
 }
