@@ -89,7 +89,7 @@ function Contact() {
             </p>
             <div className="mt-6 overflow-hidden rounded-xl border border-border bg-card">
               <iframe
-                src="https://calendly.com/zetusai/discovery"
+                src="https://calendly.com/hello-zetusai/30min"
                 className="h-[640px] w-full"
                 title="Book a discovery call"
                 loading="lazy"
