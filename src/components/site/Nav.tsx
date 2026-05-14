@@ -44,7 +44,7 @@ export function Nav() {
           ))}
           <Link
             to="/contact"
-            className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-glow transition-colors hover:bg-primary-hover"
+            className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary-hover"
           >
             Book a Call
           </Link>
@@ -75,7 +75,7 @@ export function Nav() {
             <Link
               to="/contact"
               onClick={() => setOpen(false)}
-              className="mt-2 rounded-md bg-primary px-4 py-3 text-center text-sm font-medium text-primary-foreground shadow-glow"
+              className="mt-2 rounded-md bg-primary px-4 py-3 text-center text-sm font-medium text-primary-foreground"
             >
               Book a Call
             </Link>
