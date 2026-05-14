@@ -95,7 +95,7 @@ function About() {
             {approach.map(({ icon: Icon, title, body }) => (
               <div
                 key={title}
-                className="rounded-xl border border-border bg-card p-7 transition-all hover:border-primary/60 hover:shadow-glow"
+                className="rounded-xl border border-border bg-card p-7 transition-all hover:border-primary/60"
               >
                 <Icon className="text-primary" size={22} />
                 <h3 className="mt-4 text-lg font-semibold text-foreground">
@@ -118,7 +118,7 @@ function About() {
           <div className="mt-10">
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3.5 text-sm font-medium text-primary-foreground shadow-glow-strong transition-all hover:bg-primary-hover"
+              className="inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3.5 text-sm font-medium text-primary-foreground transition-all hover:bg-primary-hover"
             >
               Book a Free Discovery Call <ArrowRight size={16} />
             </Link>

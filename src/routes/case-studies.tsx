@@ -36,7 +36,7 @@ function CaseStudies() {
           <div className="mt-10">
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3.5 text-sm font-medium text-primary-foreground shadow-glow-strong transition-all hover:bg-primary-hover"
+              className="inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3.5 text-sm font-medium text-primary-foreground transition-all hover:bg-primary-hover"
             >
               Book a Free Discovery Call <ArrowRight size={16} />
             </Link>
