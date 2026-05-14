@@ -37,11 +37,13 @@ type Status = "idle" | "submitting" | "success" | "error";
 function Contact() {
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
+  const submit = useServerFn(submitContact);
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setError(null);
-    const data = Object.fromEntries(new FormData(e.currentTarget).entries());
+    const form = e.currentTarget;
+    const data = Object.fromEntries(new FormData(form).entries());
     const parsed = schema.safeParse(data);
     if (!parsed.success) {
       setError(parsed.error.issues[0]?.message ?? "Please check the form");
@@ -49,19 +51,15 @@ function Contact() {
     }
     setStatus("submitting");
     try {
-      const res = await fetch("https://api.zetusai.com/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(parsed.data),
-      });
-      if (!res.ok) throw new Error("Request failed");
+      await submit({ data: parsed.data });
       setStatus("success");
-      e.currentTarget.reset();
+      form.reset();
     } catch {
       setStatus("error");
       setError("Could not send your message. Please email hello@zetusai.com.");
     }
   }
+
 
   return (
     <Layout>
