@@ -25,8 +25,12 @@ export function Footer() {
             </a>
           </div>
         </div>
-        <div className="mt-12 border-t border-border pt-6 text-xs text-subtle">
-          © 2026 Zetus AI. All rights reserved.
+        <div className="mt-12 space-y-2 border-t border-border pt-6 text-xs text-subtle">
+          <p>Copyright © 2026 Zetus AI.</p>
+          <p>
+            Zetus AI® is a protected trademark. All other trademarks are the
+            property of their respective owners.
+          </p>
         </div>
       </div>
     </footer>
