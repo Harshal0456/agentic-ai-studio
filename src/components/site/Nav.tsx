@@ -4,7 +4,6 @@ import { Menu, X } from "lucide-react";
 
 const links = [
   { to: "/about", label: "About" },
-  { to: "/case-studies", label: "Case Studies" },
   { to: "/contact", label: "Contact" },
 ] as const;
 
@@ -28,8 +27,8 @@ export function Nav() {
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-        <Link to="/" className="text-base font-semibold tracking-wide text-foreground">
-          ZETUS<span className="text-primary"> AI</span>
+        <Link to="/" className="text-base font-semibold tracking-[0.2em] text-foreground">
+          ZETUS AI
         </Link>
 
         <div className="hidden items-center gap-8 md:flex">
