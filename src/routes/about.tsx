@@ -65,23 +65,50 @@ function About() {
 
       <section className="border-t border-border">
         <div className="mx-auto max-w-3xl px-5 py-24">
-          <h2 className="text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
-            Why we exist
+          <p className="text-sm font-medium uppercase tracking-widest text-primary">
+            Why Zetus
+          </p>
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
+            Built for Scale. Engineered for Trust.
           </h2>
           <div className="mt-8 space-y-6 text-base leading-relaxed text-subtle md:text-lg">
             <p>
-              Most businesses we spoke to had the same problem. Their teams were
-              spending hours every day on work that could — and should — happen
-              automatically.
+              Most AI solutions are "black boxes" that pose a risk to your data.
+              Zetus AI is different. We provide dedicated, hardened
+              infrastructure for every client, ensuring your business
+              intelligence remains yours alone.
             </p>
-            <p>
-              We built Zetus AI to be different. Every system we deploy is
-              engineered from the ground up — purpose built for your specific
-              operations.
-            </p>
-            <p className="text-foreground">
-              We do not just build automations. We deploy AI powered agents.
-            </p>
+          </div>
+          <div className="mt-10 space-y-5">
+            <div className="rounded-xl border border-border bg-card p-6">
+              <h3 className="text-lg font-semibold text-foreground">
+                Zero-Retention Privacy
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-subtle">
+                Your customer data is processed, not stored. We implement strict
+                72-hour data pruning to stay ahead of global privacy regulations
+                (DPDP/GDPR).
+              </p>
+            </div>
+            <div className="rounded-xl border border-border bg-card p-6">
+              <h3 className="text-lg font-semibold text-foreground">
+                Self-Healing Architecture
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-subtle">
+                Our systems monitor themselves 24/7. If a service lags or a
+                connection drops, the infrastructure repairs itself before you
+                even notice.
+              </p>
+            </div>
+            <div className="rounded-xl border border-border bg-card p-6">
+              <h3 className="text-lg font-semibold text-foreground">
+                Bespoke Intelligence
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-subtle">
+                We don't use generic templates. We build custom logic flows
+                tailored to the specific unit economics of your industry.
+              </p>
+            </div>
           </div>
         </div>
       </section>
