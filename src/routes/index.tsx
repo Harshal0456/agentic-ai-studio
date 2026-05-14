@@ -68,7 +68,7 @@ function Home() {
             <h1 className="text-4xl font-semibold leading-[1.1] tracking-tight text-foreground md:text-6xl">
               Your business.
               <br />
-              <span className="text-primary">Powered by agents.</span>
+              <span className="text-subtle">Powered by agents.</span>
             </h1>
             <p className="mt-6 max-w-xl text-base text-subtle md:text-lg">
               Zetus AI deploys intelligent AI agents that perceive your
@@ -84,7 +84,7 @@ function Home() {
               </Link>
             </div>
           </div>
-          <div className="relative mx-auto h-72 w-72 animate-fade-in md:h-[420px] md:w-[420px]">
+          <div className="relative mx-auto h-80 w-80 animate-fade-in md:h-[520px] md:w-[520px]">
             <AuroraGraphic />
           </div>
         </div>
