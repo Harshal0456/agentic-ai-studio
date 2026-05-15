@@ -24,37 +24,37 @@ export const Route = createFileRoute("/")({
 });
 
 const problems = [
-  "Reports compiled manually",
-  "Alerts discovered too late",
+  "Reports compiled manually every morning",
+  "Problems discovered after they become crises",
   "Decisions made on yesterday's data",
-  "Follow-ups missed",
-  "Payments delayed",
+  "Follow-ups missed — leads going cold",
+  "Manual work stopping you from scaling",
 ];
 
 const cards = [
   {
     icon: ShieldCheck,
-    title: "Reliable",
+    title: "Always Reliable",
     body:
-      "Every system built with multiple verification layers — accurate output every single time.",
+      "Every output verified before delivery. Industrial-grade accuracy. Every time.",
   },
   {
     icon: Clock,
-    title: "Always on",
+    title: "Your Data — Your Control",
     body:
-      "Your agents run 24 hours a day, 7 days a week, 365 days a year. No breaks. No delays.",
+      "Agents run on your own private server. Data stays in India. Always.",
   },
   {
     icon: Handshake,
-    title: "Long term partner",
+    title: "Self-Healing",
     body:
-      "We do not build and disappear. We stay — monitoring, improving, and expanding as your business grows.",
+      "Agents detect and fix issues automatically — before you even notice something went wrong.",
   },
   {
     icon: Workflow,
-    title: "Zero disruption",
+    title: "Zero Disruption",
     body:
-      "Your team keeps working exactly as they do today. We work around your existing operations.",
+      "Works around your existing operations. No migration. No retraining. No downtime.",
   },
 ];
 
