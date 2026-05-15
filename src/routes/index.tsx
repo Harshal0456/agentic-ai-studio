@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Layout } from "@/components/site/Layout";
 import { AuroraGraphic } from "@/components/site/AuroraGraphic";
-import { ArrowRight, ShieldCheck, Clock, Handshake, Workflow } from "lucide-react";
+import { ArrowRight, ShieldCheck, Lock, RefreshCw, Zap } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -39,19 +39,19 @@ const cards = [
       "Every output verified before delivery. Industrial-grade accuracy. Every time.",
   },
   {
-    icon: Clock,
+    icon: Lock,
     title: "Your Data — Your Control",
     body:
       "Agents run on your own private server. Data stays in India. Always.",
   },
   {
-    icon: Handshake,
+    icon: RefreshCw,
     title: "Self-Healing",
     body:
       "Agents detect and fix issues automatically — before you even notice something went wrong.",
   },
   {
-    icon: Workflow,
+    icon: Zap,
     title: "Zero Disruption",
     body:
       "Works around your existing operations. No migration. No retraining. No downtime.",
