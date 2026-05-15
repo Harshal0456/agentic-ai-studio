@@ -55,7 +55,7 @@ export function AuroraGraphic() {
       />
 
       {/* vertex dots */}
-      <g fill="#A5B4FC">
+      <g fill="#A5B4FC" className="aurora-dot">
         <circle cx="250" cy="90" r="3" />
         <circle cx="389" cy="330" r="3" />
         <circle cx="111" cy="330" r="3" />
@@ -65,8 +65,8 @@ export function AuroraGraphic() {
       </g>
 
       {/* glowing core */}
-      <circle cx="250" cy="250" r="70" fill="url(#core)" />
-      <circle cx="250" cy="250" r="6" fill="#F0F4FF" />
+      <circle cx="250" cy="250" r="70" fill="url(#core)" className="aurora-core" />
+      <circle cx="250" cy="250" r="6" fill="#F0F4FF" className="aurora-core" />
 
       {/* mono labels */}
       <g
