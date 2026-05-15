@@ -20,17 +20,17 @@ export function AuroraGraphic() {
       </defs>
 
       {/* ambient halo */}
-      <circle cx="250" cy="250" r="230" fill="url(#halo)" />
+      <circle cx="250" cy="250" r="230" fill="url(#halo)" className="aurora-halo" />
 
       {/* concentric rings */}
-      <circle cx="250" cy="250" r="210" stroke="#A5B4FC" strokeOpacity="0.18" strokeDasharray="2 6" />
+      <circle cx="250" cy="250" r="210" stroke="#A5B4FC" strokeOpacity="0.18" strokeDasharray="2 6" className="aurora-spin-slow" />
       <circle cx="250" cy="250" r="180" stroke="#A5B4FC" strokeOpacity="0.22" />
-      <circle cx="250" cy="250" r="150" stroke="#A5B4FC" strokeOpacity="0.28" strokeDasharray="1 4" />
+      <circle cx="250" cy="250" r="150" stroke="#A5B4FC" strokeOpacity="0.28" strokeDasharray="1 4" className="aurora-spin-med" />
       <circle cx="250" cy="250" r="110" stroke="#A5B4FC" strokeOpacity="0.35" />
       <circle cx="250" cy="250" r="70" stroke="#A5B4FC" strokeOpacity="0.45" />
 
       {/* tick marks around outer ring */}
-      <g stroke="#A5B4FC" strokeOpacity="0.5">
+      <g stroke="#A5B4FC" strokeOpacity="0.5" className="aurora-spin-slow">
         {Array.from({ length: 24 }).map((_, i) => {
           const a = (i * Math.PI * 2) / 24;
           const x1 = 250 + Math.cos(a) * 218;
@@ -42,7 +42,7 @@ export function AuroraGraphic() {
       </g>
 
       {/* hexagram (two triangles) */}
-      <g stroke="#6366F1" strokeOpacity="0.85" strokeWidth="1">
+      <g stroke="#6366F1" strokeOpacity="0.85" strokeWidth="1" className="aurora-spin-fast">
         <polygon points="250,90 389,330 111,330" />
         <polygon points="250,410 111,170 389,170" />
       </g>
@@ -55,7 +55,7 @@ export function AuroraGraphic() {
       />
 
       {/* vertex dots */}
-      <g fill="#A5B4FC">
+      <g fill="#A5B4FC" className="aurora-dot">
         <circle cx="250" cy="90" r="3" />
         <circle cx="389" cy="330" r="3" />
         <circle cx="111" cy="330" r="3" />
@@ -65,8 +65,8 @@ export function AuroraGraphic() {
       </g>
 
       {/* glowing core */}
-      <circle cx="250" cy="250" r="70" fill="url(#core)" />
-      <circle cx="250" cy="250" r="6" fill="#F0F4FF" />
+      <circle cx="250" cy="250" r="70" fill="url(#core)" className="aurora-core" />
+      <circle cx="250" cy="250" r="6" fill="#F0F4FF" className="aurora-core" />
 
       {/* mono labels */}
       <g
