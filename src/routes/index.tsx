@@ -24,37 +24,37 @@ export const Route = createFileRoute("/")({
 });
 
 const problems = [
-  "Reports compiled manually",
-  "Alerts discovered too late",
+  "Reports compiled manually every morning",
+  "Problems discovered after they become crises",
   "Decisions made on yesterday's data",
-  "Follow-ups missed",
-  "Payments delayed",
+  "Follow-ups missed — leads going cold",
+  "Manual work stopping you from scaling",
 ];
 
 const cards = [
   {
     icon: ShieldCheck,
-    title: "Reliable",
+    title: "Always Reliable",
     body:
-      "Every system built with multiple verification layers — accurate output every single time.",
+      "Every output verified before delivery. Industrial-grade accuracy. Every time.",
   },
   {
     icon: Clock,
-    title: "Always on",
+    title: "Your Data — Your Control",
     body:
-      "Your agents run 24 hours a day, 7 days a week, 365 days a year. No breaks. No delays.",
+      "Agents run on your own private server. Data stays in India. Always.",
   },
   {
     icon: Handshake,
-    title: "Long term partner",
+    title: "Self-Healing",
     body:
-      "We do not build and disappear. We stay — monitoring, improving, and expanding as your business grows.",
+      "Agents detect and fix issues automatically — before you even notice something went wrong.",
   },
   {
     icon: Workflow,
-    title: "Zero disruption",
+    title: "Zero Disruption",
     body:
-      "Your team keeps working exactly as they do today. We work around your existing operations.",
+      "Works around your existing operations. No migration. No retraining. No downtime.",
   },
 ];
 
@@ -108,7 +108,7 @@ function Home() {
             ))}
           </ul>
           <p className="mt-10 text-xl font-semibold text-primary md:text-2xl">
-            This is what we eliminate.
+            This is what Zetus AI eliminates.
           </p>
         </div>
       </section>
@@ -117,13 +117,13 @@ function Home() {
       <section className="border-t border-border bg-card/30">
         <div className="mx-auto max-w-5xl px-5 py-24">
           <h2 className="text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
-            What Zetus AI does
+            How we work
           </h2>
           <div className="mt-12 grid gap-5 md:grid-cols-3">
             {[
-              { n: "01", t: "Analyse", d: "We analyse your operations and identify what can run automatically." },
-              { n: "02", t: "Build", d: "We build it. We monitor it. We improve it." },
-              { n: "03", t: "Deliver", d: "You wake up informed. Your business runs — even when you don't." },
+              { n: "01", t: "Understand", d: "We map your operations and identify every manual task costing you time." },
+              { n: "02", t: "Deploy", d: "We build intelligent AI agents on your own private server — secured and monitored." },
+              { n: "03", t: "Evolve", d: "Your agents improve continuously — your business runs even when you don't." },
             ].map((s) => (
               <div
                 key={s.n}
