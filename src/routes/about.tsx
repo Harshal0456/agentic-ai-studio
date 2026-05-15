@@ -73,10 +73,10 @@ function About() {
           </h2>
           <div className="mt-8 space-y-6 text-base leading-relaxed text-subtle md:text-lg">
             <p>
-              Most AI solutions are "black boxes" that pose a risk to your data.
-              Zetus AI is different. We provide dedicated, hardened
-              infrastructure for every client, ensuring your business
-              intelligence remains yours alone.
+              Most AI solutions are "black boxes" that pose a risk to your
+              data. Zetus AI provides dedicated, hardened infrastructure for
+              every client, ensuring your business intelligence remains yours
+              alone.
             </p>
           </div>
           <div className="mt-10 space-y-5">
