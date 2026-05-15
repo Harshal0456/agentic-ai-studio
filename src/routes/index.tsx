@@ -108,7 +108,7 @@ function Home() {
             ))}
           </ul>
           <p className="mt-10 text-xl font-semibold text-primary md:text-2xl">
-            This is what we eliminate.
+            This is what Zetus AI eliminates.
           </p>
         </div>
       </section>
@@ -117,13 +117,13 @@ function Home() {
       <section className="border-t border-border bg-card/30">
         <div className="mx-auto max-w-5xl px-5 py-24">
           <h2 className="text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
-            What Zetus AI does
+            How we work
           </h2>
           <div className="mt-12 grid gap-5 md:grid-cols-3">
             {[
-              { n: "01", t: "Analyse", d: "We analyse your operations and identify what can run automatically." },
-              { n: "02", t: "Build", d: "We build it. We monitor it. We improve it." },
-              { n: "03", t: "Deliver", d: "You wake up informed. Your business runs — even when you don't." },
+              { n: "01", t: "Understand", d: "We map your operations and identify every manual task costing you time." },
+              { n: "02", t: "Deploy", d: "We build intelligent AI agents on your own private server — secured and monitored." },
+              { n: "03", t: "Evolve", d: "Your agents improve continuously — your business runs even when you don't." },
             ].map((s) => (
               <div
                 key={s.n}
