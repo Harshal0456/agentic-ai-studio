@@ -7,7 +7,7 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <div className="text-base font-semibold text-foreground">
-              ZETUS<span className="text-primary"> AI</span>
+              ZETUS AI
             </div>
             <p className="mt-3 max-w-xs text-sm text-subtle">
               Your business. Powered by agents.
