@@ -25,9 +25,14 @@ export function Footer() {
             </a>
           </div>
         </div>
-        <div className="mt-12 space-y-2 border-t border-border pt-6 text-xs text-subtle">
+        <div className="mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-subtle md:flex-row md:items-center md:justify-between">
+          <div className="flex items-center gap-2">
+            <Link to="/privacy-policy" className="hover:text-foreground">Privacy Policy</Link>
+            <span>|</span>
+            <Link to="/terms-of-service" className="hover:text-foreground">Terms of Service</Link>
+          </div>
           <p>Copyright © 2026 Zetus AI.</p>
-          <p>
+          <p className="md:text-right">
             Zetus AI® is a protected trademark. All other trademarks are the
             property of their respective owners.
           </p>
