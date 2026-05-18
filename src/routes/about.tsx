@@ -56,9 +56,8 @@ function About() {
             <span className="text-primary">Driven by results.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-base text-subtle md:text-lg">
-            Zetus AI was founded by an engineer and MBA who believed Indian
-            businesses deserved better than generic tools and disappearing
-            freelancers.
+            We deploy secure, autonomous AI automations designed to eliminate
+            operational friction and scale your enterprise efficiency.
           </p>
         </div>
       </section>
