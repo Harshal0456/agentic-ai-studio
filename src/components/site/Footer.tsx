@@ -16,7 +16,7 @@ export function Footer() {
           <div className="flex flex-col gap-2 text-sm">
             <Link to="/" className="text-subtle hover:text-foreground">Home</Link>
             <Link to="/about" className="text-subtle hover:text-foreground">About</Link>
-            <Link to="/case-studies" className="text-subtle hover:text-foreground">Case Studies</Link>
+            
             <Link to="/contact" className="text-subtle hover:text-foreground">Contact</Link>
           </div>
           <div className="text-sm">
