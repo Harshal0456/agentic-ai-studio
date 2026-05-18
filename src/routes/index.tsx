@@ -203,12 +203,6 @@ function Home() {
             >
               Book a Free Discovery Call <ArrowRight size={16} />
             </Link>
-            <a
-              href="mailto:hello@zetusai.com"
-              className="text-sm text-subtle hover:text-foreground"
-            >
-              hello@zetusai.com
-            </a>
           </div>
         </div>
       </section>
