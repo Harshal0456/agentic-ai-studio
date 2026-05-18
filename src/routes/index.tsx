@@ -194,8 +194,7 @@ function Home() {
             Ready to see what's possible?
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-base text-subtle md:text-lg">
-            Book a free 30 minute discovery call. No commitment. No technical
-            jargon. Just a conversation about your business.
+            Every business is different. Your automation should be too.
           </p>
           <div className="mt-9 flex flex-col items-center gap-4">
             <Link
