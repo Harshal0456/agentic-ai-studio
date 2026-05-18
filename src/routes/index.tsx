@@ -168,24 +168,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Testimonial */}
-      <section className="border-t border-border">
-        <div className="mx-auto max-w-5xl px-5 py-20">
-          <div className="relative overflow-hidden rounded-2xl bg-card p-10 md:p-14">
-            <div className="absolute -left-2 -top-6 select-none font-serif text-[10rem] leading-none text-primary/30">
-              “
-            </div>
-            <blockquote className="relative text-xl font-medium leading-relaxed text-foreground md:text-2xl">
-              Our morning operations review used to take 2 hours. Now the report
-              arrives on my phone automatically before I leave home. My team
-              focuses on actual work instead of compiling data.
-            </blockquote>
-            <div className="relative mt-8 text-sm text-subtle">
-              — Business owner, Pune manufacturing company
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Final CTA */}
       <section className="border-t border-border bg-hero">
