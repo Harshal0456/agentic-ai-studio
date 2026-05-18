@@ -56,7 +56,7 @@ function About() {
             <span className="text-primary">Driven by results.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-base text-subtle md:text-lg">
-            We deploy secure, autonomous AI automations designed to eliminate
+            We deploy secure, agentic AI automations designed to eliminate
             operational friction and scale your enterprise efficiency.
           </p>
         </div>
