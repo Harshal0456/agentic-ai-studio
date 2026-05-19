@@ -5,7 +5,7 @@ import { ArrowRight, Compass, CheckCircle2, Lock, Heart } from "lucide-react";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Zetus AI" },
+      { title: "About us — Zetus AI" },
       {
         name: "description",
         content:
