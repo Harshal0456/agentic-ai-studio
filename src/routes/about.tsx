@@ -5,13 +5,13 @@ import { ArrowRight, Compass, CheckCircle2, Lock, Heart } from "lucide-react";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Zetus AI" },
+      { title: "About us — Zetus AI" },
       {
         name: "description",
         content:
           "Built on engineering. Driven by results. Why Zetus AI exists and how we partner with Indian businesses.",
       },
-      { property: "og:title", content: "About — Zetus AI" },
+      { property: "og:title", content: "About us — Zetus AI" },
       {
         property: "og:description",
         content: "Engineer first. Verified always. Long term partners.",
@@ -85,8 +85,8 @@ function About() {
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-subtle">
                 Your customer data is processed, not stored. We implement strict
-                72-hour data pruning to stay ahead of global privacy regulations
-                (DPDP/GDPR).
+                72-hour data pruning to stay in compliance with data privacy
+                regulations.
               </p>
             </div>
             <div className="rounded-xl border border-border bg-card p-6">

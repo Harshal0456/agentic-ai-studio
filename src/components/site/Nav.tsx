@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { to: "/about", label: "About" },
+  { to: "/about", label: "About us" },
   { to: "/contact", label: "Contact" },
 ] as const;
 
