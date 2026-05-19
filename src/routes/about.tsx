@@ -11,7 +11,7 @@ export const Route = createFileRoute("/about")({
         content:
           "Built on engineering. Driven by results. Why Zetus AI exists and how we partner with Indian businesses.",
       },
-      { property: "og:title", content: "About — Zetus AI" },
+      { property: "og:title", content: "About us — Zetus AI" },
       {
         property: "og:description",
         content: "Engineer first. Verified always. Long term partners.",
