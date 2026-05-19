@@ -85,8 +85,8 @@ function About() {
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-subtle">
                 Your customer data is processed, not stored. We implement strict
-                72-hour data pruning to stay ahead of global privacy regulations
-                (DPDP/GDPR).
+                72-hour data pruning to stay in compliance with data privacy
+                regulations.
               </p>
             </div>
             <div className="rounded-xl border border-border bg-card p-6">
