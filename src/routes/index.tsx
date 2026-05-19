@@ -71,9 +71,10 @@ function Home() {
               <span className="text-subtle">Powered by agents.</span>
             </h1>
             <p className="mt-6 max-w-xl text-base text-subtle md:text-lg">
-              Zetus AI is an agentic infrastructure company. We don't build
-              automations — we deploy autonomous business systems that perceive
-              your operations, make decisions, and act on your behalf.
+              We are an agentic AI infrastructure company built for Indian
+              businesses. We don't build automations — we deploy autonomous
+              business systems that perceive your operations, make decisions,
+              and act on your behalf.
             </p>
             <div className="mt-9">
               <Link
