@@ -75,9 +75,6 @@ function Home() {
               businesses. We don't just build automations — we deploy autonomous
               business systems that perceive your operations, make decisions,
               and act on your behalf.
-              businesses. We don't build automations — we deploy autonomous
-              business systems that perceive your operations, make decisions,
-              and act on your behalf.
             </p>
             <div className="mt-9">
               <Link
