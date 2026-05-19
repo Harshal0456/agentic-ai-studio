@@ -72,7 +72,7 @@ function Home() {
             </h1>
             <p className="mt-6 max-w-xl text-base text-subtle md:text-lg">
               We are an agentic AI infrastructure company built for Indian
-              businesses. We don't build automations — we deploy autonomous
+              businesses. We don't just build automations — we deploy autonomous
               business systems that perceive your operations, make decisions,
               and act on your behalf.
             </p>
