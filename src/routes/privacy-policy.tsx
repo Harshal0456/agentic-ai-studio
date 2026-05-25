@@ -79,7 +79,7 @@ const sections = [
     ],
   },
   {
-    num: "9",
+    num: "7",
     title: "Cookies",
     content: [
       "Our website uses minimal cookies for basic functionality only.",
@@ -87,7 +87,7 @@ const sections = [
     ],
   },
   {
-    num: "10",
+    num: "8",
     title: "Changes to This Policy",
     content: [
       "We may update this policy periodically.",
@@ -95,7 +95,7 @@ const sections = [
     ],
   },
   {
-    num: "11",
+    num: "9",
     title: "Contact Us",
     content: [
       "DSH Innovations Private Limited",
