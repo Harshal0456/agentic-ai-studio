@@ -26,8 +26,7 @@ const sections = [
     num: "1",
     title: "Who We Are",
     content: [
-      "DSH Innovations Private Limited operating under the brand Zetus AI is registered in India with CIN U62099PN2026PTC255228.",
-      "Registered address: SN 167 168P Flat No 601 Hadapsar Pune Maharashtra India.",
+      "DSH Innovations Private Limited operating under the brand Zetus AI is registered in India.",
       "Contact: hello@zetusai.com",
     ],
   },
@@ -57,7 +56,7 @@ const sections = [
     content: [
       "All client data is stored on dedicated servers located in Mumbai India.",
       "Your data never leaves India.",
-      "We are fully compliant with the Digital Personal Data Protection Act 2023.",
+      "We strive towards being fully compliant with the Digital Personal Data Protection Act 2023.",
     ],
   },
   {
@@ -75,33 +74,8 @@ const sections = [
     content: [
       "We do not sell your data to any third party.",
       "We do not share your data with advertisers.",
-      "Limited sharing only with:",
-      "Anthropic Claude API for AI processing with anonymised data only.",
-      "Zoho for CRM and invoicing.",
-      "Razorpay for payment processing.",
-      "Twilio for WhatsApp communications.",
+      "Limited sharing only for AI processing with anonymised data, CRM and invoicing, payment processing, communications.",
       "All third party processors are contractually bound to data protection standards.",
-    ],
-  },
-  {
-    num: "7",
-    title: "Your Rights Under DPDP Act 2023",
-    content: [
-      "You have the right to:",
-      "Access the personal data we hold about you.",
-      "Correct inaccurate personal data.",
-      "Request deletion of your personal data.",
-      "Withdraw consent at any time.",
-      "Lodge a complaint with the Data Protection Board of India.",
-      "To exercise these rights contact: hello@zetusai.com",
-    ],
-  },
-  {
-    num: "8",
-    title: "WhatsApp Communications",
-    content: [
-      "We only send WhatsApp messages to numbers that have explicitly opted in to receive communications from Zetus AI.",
-      "To opt out at any time reply STOP to any message and we will immediately add you to our do not contact list.",
     ],
   },
   {
