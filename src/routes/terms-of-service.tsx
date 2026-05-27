@@ -96,7 +96,7 @@ const sections = [
     title: "Limitation of Liability",
     content: [
       "Zetus AI is not liable for losses arising from third party service outages including hosting providers API services or internet service providers.",
-      "Our total liability is limited to fees paid in the preceding 3 months.",
+      "Our total liability is limited to fees paid in the preceding month.",
     ],
   },
   {
@@ -112,7 +112,7 @@ const sections = [
     num: "10",
     title: "Governing Law",
     content: [
-      "These terms are governed by the laws of India. Any disputes are subject to the jurisdiction of courts in Pune Maharashtra India.",
+      "These terms are governed by the laws of India. Any disputes are subject to the jurisdiction of courts in India.",
     ],
   },
   {
