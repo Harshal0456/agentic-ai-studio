@@ -112,7 +112,7 @@ const sections = [
     num: "10",
     title: "Governing Law",
     content: [
-      "These terms are governed by the laws of India. Any disputes are subject to the jurisdiction of courts in Pune Maharashtra India.",
+      "These terms are governed by the laws of India. Any disputes are subject to the jurisdiction of courts in India.",
     ],
   },
   {
