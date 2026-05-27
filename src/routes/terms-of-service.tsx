@@ -96,7 +96,7 @@ const sections = [
     title: "Limitation of Liability",
     content: [
       "Zetus AI is not liable for losses arising from third party service outages including hosting providers API services or internet service providers.",
-      "Our total liability is limited to fees paid in the preceding 3 months.",
+      "Our total liability is limited to fees paid in the preceding month.",
     ],
   },
   {
