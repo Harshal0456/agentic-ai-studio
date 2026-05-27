@@ -128,13 +128,13 @@ function Home() {
             ].map((s) => (
               <div
                 key={s.n}
-                className="rounded-xl border border-border bg-card p-6"
+                className="rounded-xl border border-border bg-card p-8 md:p-10"
               >
-                <div className="text-sm font-mono text-primary">{s.n}</div>
-                <div className="mt-3 text-lg font-semibold text-foreground">
+                <div className="text-base font-mono text-primary">{s.n}</div>
+                <div className="mt-4 text-2xl font-semibold text-foreground md:text-3xl">
                   {s.t}
                 </div>
-                <p className="mt-2 text-sm text-subtle">{s.d}</p>
+                <p className="mt-3 text-base leading-relaxed text-subtle md:text-lg">{s.d}</p>
               </div>
             ))}
           </div>
