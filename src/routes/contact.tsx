@@ -103,7 +103,10 @@ function Contact() {
               Prefer to write to us?
             </h2>
             <form onSubmit={onSubmit} className="mt-6 space-y-4">
-              <Field label="Your name" name="name" required />
+              <div className="grid gap-4 sm:grid-cols-2">
+                <Field label="First name" name="firstName" required />
+                <Field label="Last name" name="lastName" required />
+              </div>
               <Field label="Your company" name="company" required />
               <Field label="Your email" name="email" type="email" required />
               <Field label="Your phone" name="phone" type="tel" />
