@@ -29,8 +29,8 @@ const schema = z.object({
   lastName: z.string().trim().min(1, "Last name is required").max(50),
   company: z.string().trim().min(1, "Company is required").max(100),
   email: z.string().trim().email("Enter a valid email").max(255),
-  phone: z.string().trim().max(40).optional().or(z.literal("")),
-  message: z.string().trim().max(2000).optional().or(z.literal("")),
+  phone: z.string().trim().min(1, "Phone is required").max(40),
+  message: z.string().trim().min(1, "Please tell us about your business").max(2000),
 });
 
 type Status = "idle" | "submitting" | "success" | "error";
