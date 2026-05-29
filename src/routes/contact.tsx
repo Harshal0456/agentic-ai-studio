@@ -111,17 +111,19 @@ function Contact() {
               </div>
               <Field label="Your company" name="company" required />
               <Field label="Your email" name="email" type="email" required />
-              <Field label="Your phone" name="phone" type="tel" />
+              <Field label="Your phone" name="phone" type="tel" required />
               <div>
                 <label className="mb-1.5 block text-sm text-subtle">
-                  Tell us about your business
+                  Tell us about your business <span className="text-primary">*</span>
                 </label>
                 <textarea
                   name="message"
                   rows={5}
+                  required
                   maxLength={2000}
                   className="w-full rounded-md border border-border bg-card px-3.5 py-2.5 text-sm text-foreground placeholder:text-subtle/60 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/40"
                 />
+              </div>
               </div>
 
               {error && <p className="text-sm text-destructive">{error}</p>}
