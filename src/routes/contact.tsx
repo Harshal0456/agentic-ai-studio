@@ -124,7 +124,6 @@ function Contact() {
                   className="w-full rounded-md border border-border bg-card px-3.5 py-2.5 text-sm text-foreground placeholder:text-subtle/60 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/40"
                 />
               </div>
-              </div>
 
               {error && <p className="text-sm text-destructive">{error}</p>}
               {status === "success" && (
