@@ -52,7 +52,8 @@ function Contact() {
     }
     setStatus("submitting");
     try {
-      await submit({ data: parsed.data });
+      const { firstName, lastName, ...rest } = parsed.data;
+      await submit({ data: { ...rest, name: `${firstName} ${lastName}` } });
       setStatus("success");
       form.reset();
     } catch {
