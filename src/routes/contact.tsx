@@ -25,7 +25,8 @@ export const Route = createFileRoute("/contact")({
 });
 
 const schema = z.object({
-  name: z.string().trim().min(1, "Name is required").max(100),
+  firstName: z.string().trim().min(1, "First name is required").max(50),
+  lastName: z.string().trim().min(1, "Last name is required").max(50),
   company: z.string().trim().min(1, "Company is required").max(100),
   email: z.string().trim().email("Enter a valid email").max(255),
   phone: z.string().trim().max(40).optional().or(z.literal("")),
@@ -51,7 +52,8 @@ function Contact() {
     }
     setStatus("submitting");
     try {
-      await submit({ data: parsed.data });
+      const { firstName, lastName, ...rest } = parsed.data;
+      await submit({ data: { ...rest, name: `${firstName} ${lastName}` } });
       setStatus("success");
       form.reset();
     } catch {
@@ -103,7 +105,10 @@ function Contact() {
               Prefer to write to us?
             </h2>
             <form onSubmit={onSubmit} className="mt-6 space-y-4">
-              <Field label="Your name" name="name" required />
+              <div className="grid gap-4 sm:grid-cols-2">
+                <Field label="First name" name="firstName" required />
+                <Field label="Last name" name="lastName" required />
+              </div>
               <Field label="Your company" name="company" required />
               <Field label="Your email" name="email" type="email" required />
               <Field label="Your phone" name="phone" type="tel" />
