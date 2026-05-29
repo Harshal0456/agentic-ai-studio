@@ -29,8 +29,8 @@ const schema = z.object({
   lastName: z.string().trim().min(1, "Last name is required").max(50),
   company: z.string().trim().min(1, "Company is required").max(100),
   email: z.string().trim().email("Enter a valid email").max(255),
-  phone: z.string().trim().max(40).optional().or(z.literal("")),
-  message: z.string().trim().max(2000).optional().or(z.literal("")),
+  phone: z.string().trim().min(1, "Phone is required").max(40),
+  message: z.string().trim().min(1, "Please tell us about your business").max(2000),
 });
 
 type Status = "idle" | "submitting" | "success" | "error";
@@ -111,14 +111,15 @@ function Contact() {
               </div>
               <Field label="Your company" name="company" required />
               <Field label="Your email" name="email" type="email" required />
-              <Field label="Your phone" name="phone" type="tel" />
+              <Field label="Your phone" name="phone" type="tel" required />
               <div>
                 <label className="mb-1.5 block text-sm text-subtle">
-                  Tell us about your business
+                  Tell us about your business <span className="text-primary">*</span>
                 </label>
                 <textarea
                   name="message"
                   rows={5}
+                  required
                   maxLength={2000}
                   className="w-full rounded-md border border-border bg-card px-3.5 py-2.5 text-sm text-foreground placeholder:text-subtle/60 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/40"
                 />
