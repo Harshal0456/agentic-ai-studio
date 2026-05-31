@@ -37,6 +37,9 @@ type Status = "idle" | "submitting" | "success" | "error";
 function Contact() {
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
+  const [country, setCountry] = useState<Country>(
+    () => COUNTRIES.find((c) => c.code === "IN")!,
+  );
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
