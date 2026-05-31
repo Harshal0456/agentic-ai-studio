@@ -45,7 +45,12 @@ function Contact() {
     e.preventDefault();
     setError(null);
     const form = e.currentTarget;
-    const data = Object.fromEntries(new FormData(form).entries());
+    const fd = new FormData(form);
+    const phoneLocal = String(fd.get("phone") ?? "").trim();
+    const data = {
+      ...Object.fromEntries(fd.entries()),
+      phone: phoneLocal ? `${country.dial} ${phoneLocal}` : "",
+    };
     const parsed = schema.safeParse(data);
     if (!parsed.success) {
       setError(parsed.error.issues[0]?.message ?? "Please check the form");
