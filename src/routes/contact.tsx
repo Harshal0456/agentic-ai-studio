@@ -1,9 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useServerFn } from "@tanstack/react-start";
 import { Layout } from "@/components/site/Layout";
 import { useState } from "react";
 import { z } from "zod";
-import { submitContact } from "@/lib/contact.functions";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -38,7 +36,6 @@ type Status = "idle" | "submitting" | "success" | "error";
 function Contact() {
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
-  const submit = useServerFn(submitContact);
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -52,8 +49,12 @@ function Contact() {
     }
     setStatus("submitting");
     try {
-      const { firstName, lastName, ...rest } = parsed.data;
-      await submit({ data: { ...rest, name: `${firstName} ${lastName}` } });
+      const res = await fetch("https://n8n.zetusai.com/webhook/contact-form", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(parsed.data),
+      });
+      if (!res.ok) throw new Error(`Request failed (${res.status})`);
       setStatus("success");
       form.reset();
     } catch {
