@@ -121,7 +121,24 @@ function Contact() {
               </div>
               <Field label="Your company" name="company" required />
               <Field label="Your email" name="email" type="email" required />
-              <Field label="Your phone" name="phone" type="tel" required />
+              <div>
+                <label htmlFor="phone" className="mb-1.5 block text-sm text-subtle">
+                  Your phone <span className="text-primary">*</span>
+                </label>
+                <div className="flex">
+                  <CountryCodeSelect value={country} onChange={setCountry} />
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    required
+                    maxLength={40}
+                    inputMode="tel"
+                    placeholder="9876543210"
+                    className="w-full rounded-r-md border border-border bg-card px-3.5 py-2.5 text-sm text-foreground placeholder:text-subtle/60 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/40"
+                  />
+                </div>
+              </div>
               <div>
                 <label className="mb-1.5 block text-sm text-subtle">
                   Tell us about your business <span className="text-primary">*</span>
