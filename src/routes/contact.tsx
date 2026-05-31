@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Layout } from "@/components/site/Layout";
 import { useState } from "react";
 import { z } from "zod";
+import { COUNTRIES, CountryCodeSelect, type Country } from "@/components/site/CountryCodeSelect";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -36,12 +37,20 @@ type Status = "idle" | "submitting" | "success" | "error";
 function Contact() {
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
+  const [country, setCountry] = useState<Country>(
+    () => COUNTRIES.find((c) => c.code === "IN")!,
+  );
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setError(null);
     const form = e.currentTarget;
-    const data = Object.fromEntries(new FormData(form).entries());
+    const fd = new FormData(form);
+    const phoneLocal = String(fd.get("phone") ?? "").trim();
+    const data = {
+      ...Object.fromEntries(fd.entries()),
+      phone: phoneLocal ? `${country.dial} ${phoneLocal}` : "",
+    };
     const parsed = schema.safeParse(data);
     if (!parsed.success) {
       setError(parsed.error.issues[0]?.message ?? "Please check the form");
@@ -112,7 +121,24 @@ function Contact() {
               </div>
               <Field label="Your company" name="company" required />
               <Field label="Your email" name="email" type="email" required />
-              <Field label="Your phone" name="phone" type="tel" required />
+              <div>
+                <label htmlFor="phone" className="mb-1.5 block text-sm text-subtle">
+                  Your phone <span className="text-primary">*</span>
+                </label>
+                <div className="flex">
+                  <CountryCodeSelect value={country} onChange={setCountry} />
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    required
+                    maxLength={40}
+                    inputMode="tel"
+                    placeholder="9876543210"
+                    className="w-full rounded-r-md border border-border bg-card px-3.5 py-2.5 text-sm text-foreground placeholder:text-subtle/60 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/40"
+                  />
+                </div>
+              </div>
               <div>
                 <label className="mb-1.5 block text-sm text-subtle">
                   Tell us about your business <span className="text-primary">*</span>
