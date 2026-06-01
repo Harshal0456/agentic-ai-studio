@@ -57,7 +57,7 @@ function About() {
           </h1>
           <p className="mt-6 max-w-2xl text-base text-subtle md:text-lg">
             We deploy secure, agentic AI automations designed to eliminate
-            operational friction and scale your enterprise efficiency.
+            operational friction and scale your business efficiency.
           </p>
         </div>
       </section>
