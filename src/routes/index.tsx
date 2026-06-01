@@ -16,7 +16,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Agentic AI for Indian businesses. Reliable, always on, engineered to last.",
+          "Agentic AI for businesses. Reliable, always on, engineered to last.",
       },
     ],
   }),
