@@ -75,6 +75,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "Zetus AI" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { title: "Lovable App" },
+      { property: "og:title", content: "Lovable App" },
+      { name: "twitter:title", content: "Lovable App" },
+      { name: "description", content: "We are an agentic AI infrastructure company engineered for businesses." },
+      { property: "og:description", content: "We are an agentic AI infrastructure company engineered for businesses." },
+      { name: "twitter:description", content: "We are an agentic AI infrastructure company engineered for businesses." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/fe9e9a1d-92bc-49e2-a0e9-4e7a1105fa56/id-preview-1ebb6a7f--b6b995bb-8e83-4b8c-9532-fe0b140e025b.lovable.app-1780312098235.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/fe9e9a1d-92bc-49e2-a0e9-4e7a1105fa56/id-preview-1ebb6a7f--b6b995bb-8e83-4b8c-9532-fe0b140e025b.lovable.app-1780312098235.png" },
     ],
     links: [
       {
