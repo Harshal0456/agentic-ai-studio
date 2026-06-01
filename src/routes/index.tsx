@@ -16,7 +16,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Agentic AI for Indian businesses. Reliable, always on, engineered to last.",
+          "Agentic AI for businesses. Reliable, always on, engineered to last.",
       },
     ],
   }),
@@ -71,7 +71,7 @@ function Home() {
               <span className="text-subtle">Powered by agents.</span>
             </h1>
             <p className="mt-6 max-w-xl text-base text-subtle md:text-lg">
-              We are an agentic AI infrastructure company engineered for Indian
+              We are an agentic AI infrastructure company engineered for
               businesses. We don't just build automations — we deploy autonomous
               business systems that perceive your operations, make decisions,
               and act on your behalf.
