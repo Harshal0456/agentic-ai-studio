@@ -77,7 +77,7 @@ const sections = [
     title: "Data and Privacy",
     content: [
       "Client data is processed in accordance with our Privacy Policy.",
-      "Client data is stored exclusively on client owned infrastructure in India.",
+      "Client data is stored solely within their own VPS infrastructure, hosted in their country of residence.",
       "Zetus AI operates on a zero retention policy for client operational data.",
     ],
   },
@@ -88,7 +88,7 @@ const sections = [
       "Zetus AI provides automated monitoring and self healing infrastructure for all deployed systems.",
       "We target maximum uptime for all client deployments.",
       "Support is available via WhatsApp and email at hello@zetusai.com.",
-      "Response time for critical issues: 4 hours.",
+      "Response time for critical issues: 24 hours.",
     ],
   },
   {
