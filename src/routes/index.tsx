@@ -42,7 +42,7 @@ const cards = [
     icon: Lock,
     title: "Your Data — Your Control",
     body:
-      "Agents run on your own private server. Data stays in India. Always.",
+      "Agents run on your own private server. Your data stays where you are — always.",
   },
   {
     icon: RefreshCw,
