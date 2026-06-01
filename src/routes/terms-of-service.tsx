@@ -86,7 +86,7 @@ const sections = [
     title: "Uptime and Support",
     content: [
       "Zetus AI provides automated monitoring and self healing infrastructure for all deployed systems.",
-      "We target 99.9 percent uptime for all client deployments.",
+      "We target maximum uptime for all client deployments.",
       "Support is available via WhatsApp and email at hello@zetusai.com.",
       "Response time for critical issues: 4 hours.",
     ],
