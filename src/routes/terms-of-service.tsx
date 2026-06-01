@@ -122,8 +122,6 @@ const sections = [
       "DSH Innovations Private Limited",
       "hello@zetusai.com",
       "zetusai.com",
-      "CIN: U62099PN2026PTC255228",
-      "GSTIN: 27AAMCD6800G1ZN",
     ],
   },
 ];
