@@ -105,7 +105,7 @@ const features = [
 ];
 
 const stats = [
-  { number: "12–15", label: "Min to deploy client server" },
+  { number: "24hrs", label: "to deploy client server" },
   { number: "15", label: "Agents in onboarding pipeline" },
   { number: "0", label: "Open ports exposed" },
   { number: "1000+", label: "Client scale designed for" },
@@ -126,7 +126,7 @@ const comparisons = [
   },
   {
     title: "vs In-House Automation",
-    body: "Building in-house takes months and a technical team. We deploy in 15 minutes. You start saving from day one.",
+    body: "Building in-house takes months and a technical team. We deploy in 24hrs. You start saving from day one.",
   },
 ];
 
@@ -142,7 +142,7 @@ function WhyChooseZetusAI() {
             Enterprise-grade AI infrastructure
             <br />
             built for{" "}
-            <span className="text-primary italic">Indian businesses.</span>
+            <span className="text-primary italic">businesses.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-base text-subtle md:text-lg">
             We don't build generic automations. We deploy fully autonomous
