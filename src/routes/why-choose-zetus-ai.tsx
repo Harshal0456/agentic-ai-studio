@@ -17,7 +17,7 @@ export const Route = createFileRoute("/why-choose-zetus-ai")({
       {
         name: "description",
         content:
-          "Dedicated, secured, self-healing agentic AI infrastructure built for Indian businesses. Zero attack surface, per-client isolation, and 15-minute deployment.",
+          "Dedicated, secured, self-healing agentic AI infrastructure built for businesses. Zero attack surface, per-client isolation, and 24hr deployment.",
       },
       { property: "og:title", content: "Why Choose Zetus AI" },
       {
@@ -36,10 +36,10 @@ const features = [
     tag: "Security",
     title: "Zero Attack Surface",
     items: [
-      "All traffic via Cloudflare Tunnel — zero open ports",
-      "SSH hardened on non-standard port, Ed25519 keys only",
-      "UFW firewall — block-all by default",
-      "Fail2ban brute-force protection",
+      "All traffic via secure Tunnels — zero open ports",
+      "SSH hardened on non-standard port, cryptographic keys only",
+      "Security Firewall — block-all by default",
+      "Brute-force protection",
       "2FA on every client instance",
     ],
   },
@@ -52,7 +52,7 @@ const features = [
       "Docker isolation per client environment",
       "Unique encryption key per client",
       "Zero data retention — your data stays yours",
-      "DPDP compliant architecture",
+      "Data security compliant architecture",
     ],
   },
   {
@@ -60,7 +60,7 @@ const features = [
     tag: "Deployment",
     title: "15-Agent Auto-Onboarding",
     items: [
-      "Client server ready in 12–15 minutes",
+      "Client server ready in 24hrs",
       "Fully automated — zero human touch",
       "Git-Sync fleet management across all clients",
       "One push updates all clients simultaneously",
@@ -72,11 +72,11 @@ const features = [
     tag: "Reliability",
     title: "Self-Healing Infrastructure",
     items: [
-      "Uptime Kuma — 24/7 monitoring, 60-second detection",
-      "Self-healing watchdog scripts",
-      "Daily AES-256 encrypted backups to Google Drive",
+      "24/7 monitoring, 60-second fault detection",
+      "Self-healing watchdog systems",
+      "Daily encrypted backups to Google Drive",
       "30-day backup retention",
-      "Instant WhatsApp/Telegram alerts on any failure",
+      "Instant alerts on failure",
     ],
   },
   {
@@ -84,7 +84,7 @@ const features = [
     tag: "Secrets",
     title: "Vault-Based Credential Management",
     items: [
-      "Infisical vault — all API keys stored securely",
+      "All API keys stored securely in digital vaults",
       "Per-client secret environment — never mixed",
       "Secrets injected at runtime — never hardcoded",
       "Full audit trail on every access",
@@ -95,17 +95,17 @@ const features = [
     tag: "Intelligence",
     title: "Agentic AI Layer",
     items: [
-      "Claude API — anti-hallucination guard on every node",
-      "Model routing: Haiku → Sonnet → Opus by task",
-      "One agent = one job architecture",
-      "Output verified before passing to next agent",
+      "Anti-hallucination protocols in every automation",
+      "Intelligent Model routing",
+      "One agent one job architecture",
+      "Verified output before passing to next agent",
       "Client data — read only, never retained",
     ],
   },
 ];
 
 const stats = [
-  { number: "12–15", label: "Min to deploy client server" },
+  { number: "24hrs", label: "to deploy client server" },
   { number: "15", label: "Agents in onboarding pipeline" },
   { number: "0", label: "Open ports exposed" },
   { number: "1000+", label: "Client scale designed for" },
@@ -126,7 +126,7 @@ const comparisons = [
   },
   {
     title: "vs In-House Automation",
-    body: "Building in-house takes months and a technical team. We deploy in 15 minutes. You start saving from day one.",
+    body: "Building in-house takes months and a technical team. We deploy in 24hrs. You start saving from day one.",
   },
 ];
 
@@ -142,7 +142,7 @@ function WhyChooseZetusAI() {
             Enterprise-grade AI infrastructure
             <br />
             built for{" "}
-            <span className="text-primary italic">Indian businesses.</span>
+            <span className="text-primary italic">businesses.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-base text-subtle md:text-lg">
             We don't build generic automations. We deploy fully autonomous
