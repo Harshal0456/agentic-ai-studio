@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 
 const links = [
   { to: "/about", label: "About us" },
+  { to: "/why-choose-zetus-ai", label: "Why Zetus" },
   { to: "/contact", label: "Contact" },
 ] as const;
 
