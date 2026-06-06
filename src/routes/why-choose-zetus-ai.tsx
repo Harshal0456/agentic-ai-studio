@@ -108,7 +108,7 @@ const features = [
 const comparisons = [
   {
     title: "vs Generic Automation Tools",
-    body: "Zapier and Make are shared platforms. We deploy dedicated infrastructure — your client's data never touches another company's server.",
+    body: "Zapier and Make run on shared infrastructure. We deploy a dedicated server per client — your data is isolated, never mixed with another business's automations.",
   },
   {
     title: "vs Freelance Developers",
@@ -120,7 +120,7 @@ const comparisons = [
   },
   {
     title: "vs In-House Automation",
-    body: "Building in-house takes months and a technical team. We deploy in 24hrs. You start saving from day one.",
+    body: "Building in-house takes months and a dedicated technical team. We have your server live within 24 hours and your first automation tested and delivered within 15 business days.",
   },
 ];
 
