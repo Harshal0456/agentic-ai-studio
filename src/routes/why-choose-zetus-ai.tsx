@@ -62,9 +62,9 @@ const features = [
     items: [
       "Client server ready in 24hrs",
       "Fully automated — zero human touch",
-      "Git-Sync fleet management across all clients",
+      "Intelligent fleet management across all clients",
       "One push updates all clients simultaneously",
-      "Coolify for deployment management",
+      "Smart deployment management",
     ],
   },
   {
@@ -74,7 +74,7 @@ const features = [
     items: [
       "24/7 monitoring, 60-second fault detection",
       "Self-healing watchdog systems",
-      "Daily encrypted backups to Google Drive",
+      "Daily encrypted backups",
       "30-day backup retention",
       "Instant alerts on failure",
     ],
