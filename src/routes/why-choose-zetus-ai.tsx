@@ -104,12 +104,6 @@ const features = [
   },
 ];
 
-const stats = [
-  { number: "24hrs", label: "to deploy client server" },
-  { number: "15", label: "Agents in onboarding pipeline" },
-  { number: "0", label: "Open ports exposed" },
-  { number: "1000+", label: "Client scale designed for" },
-];
 
 const comparisons = [
   {
@@ -192,28 +186,6 @@ function WhyChooseZetusAI() {
         </div>
       </section>
 
-      <section className="border-t border-border bg-card/30">
-        <div className="mx-auto max-w-6xl px-5 py-24">
-          <p className="text-sm font-medium uppercase tracking-widest text-primary">
-            By the Numbers
-          </p>
-          <div className="mt-10 grid grid-cols-2 gap-5 md:grid-cols-4">
-            {stats.map((s) => (
-              <div
-                key={s.label}
-                className="rounded-xl border border-border bg-card p-7 text-center"
-              >
-                <div className="text-4xl font-semibold tracking-tight text-foreground md:text-5xl">
-                  {s.number}
-                </div>
-                <div className="mt-3 text-sm leading-relaxed text-subtle">
-                  {s.label}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="border-t border-border">
         <div className="mx-auto max-w-6xl px-5 py-24">
