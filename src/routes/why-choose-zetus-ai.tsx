@@ -17,7 +17,7 @@ export const Route = createFileRoute("/why-choose-zetus-ai")({
       {
         name: "description",
         content:
-          "Dedicated, secured, self-healing agentic AI infrastructure built for Indian businesses. Zero attack surface, per-client isolation, and 15-minute deployment.",
+          "Dedicated, secured, self-healing agentic AI infrastructure built for businesses. Zero attack surface, per-client isolation, and 24hr deployment.",
       },
       { property: "og:title", content: "Why Choose Zetus AI" },
       {
