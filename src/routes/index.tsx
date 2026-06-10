@@ -150,7 +150,7 @@ function Home() {
       <section className="border-t border-border">
         <div className="mx-auto max-w-6xl px-5 py-24">
           <h2 className="text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
-            Why Zetus AI
+            Our differentiation
           </h2>
           <div className="mt-12 grid gap-5 md:grid-cols-2">
             {cards.map(({ icon: Icon, title, body }) => (
