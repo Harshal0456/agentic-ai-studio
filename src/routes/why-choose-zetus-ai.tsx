@@ -17,7 +17,7 @@ export const Route = createFileRoute("/why-choose-zetus-ai")({
       {
         name: "description",
         content:
-          "Dedicated, secured, self-healing agentic AI infrastructure built for businesses. Zero attack surface, per-client isolation, and 24hr deployment.",
+          "Every client gets their own private server — nobody can reach it from the internet, it monitors and repairs itself, and it is live within 24 hours.",
       },
       { property: "og:title", content: "Why Choose Zetus AI" },
       {
@@ -51,7 +51,7 @@ const features = [
       "Every client gets their own server — never shared",
       "Docker isolation per client environment",
       "Unique encryption key per client",
-      "Zero data retention — your data stays yours",
+      "Data deleted within 72 hours — never kept long-term",
       "Data security compliant architecture",
     ],
   },
@@ -98,7 +98,7 @@ const features = [
       "Intelligent Model routing",
       "One agent one job architecture",
       "Verified output before passing to next agent",
-      "Client data — read only, never retained",
+      "Client data is read only — we never modify your originals",
     ],
   },
 ];
