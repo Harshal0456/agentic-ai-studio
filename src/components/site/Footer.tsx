@@ -10,7 +10,7 @@ export function Footer() {
               ZETUS AI
             </div>
             <p className="mt-3 max-w-xs text-sm text-subtle">
-              Your business. Powered by agents.
+              Your business. Automated by agents.
             </p>
           </div>
           <div className="flex flex-col gap-2 text-sm">

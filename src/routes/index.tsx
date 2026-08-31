@@ -6,13 +6,13 @@ import { ArrowRight, ShieldCheck, Lock, RefreshCw, Zap } from "lucide-react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Zetus AI — Your business. Powered by agents." },
+      { title: "Zetus AI — Your business. Automated by agents." },
       {
         name: "description",
         content:
           "Zetus AI builds software that takes over the repetitive office work your team does by hand — reading documents, entering data, chasing follow-ups, building reports.",
       },
-      { property: "og:title", content: "Zetus AI — Your business. Powered by agents." },
+      { property: "og:title", content: "Zetus AI — Your business. Automated by agents." },
       {
         property: "og:description",
         content:
@@ -68,7 +68,7 @@ function Home() {
             <h1 className="text-4xl font-semibold leading-[1.1] tracking-tight text-foreground md:text-6xl">
               Your business.
               <br />
-              <span className="text-subtle">Powered by agents.</span>
+              <span className="text-subtle">Automated by agents.</span>
             </h1>
             <p className="mt-6 max-w-xl text-base text-subtle md:text-lg">
               Your staff spend hours every day copying data between systems,
