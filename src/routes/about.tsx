@@ -53,11 +53,11 @@ function About() {
           <h1 className="animate-fade-up text-4xl font-semibold leading-[1.1] tracking-tight text-foreground md:text-6xl">
             Built on engineering.
             <br />
-            <span className="text-primary">Driven by results.</span>
+            <span className="text-primary">Designed for trust.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-base text-subtle md:text-lg">
-            We deploy secure, agentic AI automations designed to eliminate
-            operational friction and scale your business efficiency.
+            We take the manual work off your team — so you can grow without
+            hiring more people just to keep up with the paperwork.
           </p>
         </div>
       </section>
@@ -68,7 +68,7 @@ function About() {
             Why Zetus
           </p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
-            Built for Scale. Engineered for Trust.
+            Why we do it this way
           </h2>
           <div className="mt-8 space-y-6 text-base leading-relaxed text-subtle md:text-lg">
             <p>
@@ -84,9 +84,8 @@ function About() {
                 Zero-Retention Privacy
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-subtle">
-                Your customer data is processed, not stored. We implement strict
-                72-hour data pruning to stay in compliance with data privacy
-                regulations.
+                Your customer data is processed, not stored. Files are deleted
+                within 72 hours, in line with data privacy regulations.
               </p>
             </div>
             <div className="rounded-xl border border-border bg-card p-6">
@@ -104,8 +103,9 @@ function About() {
                 Bespoke Intelligence
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-subtle">
-                We don't use generic templates. We build custom logic flows
-                tailored to the specific unit economics of your industry.
+                We don't use generic templates. We build to fit how your
+                business actually makes money — not a template borrowed from
+                someone else's industry.
               </p>
             </div>
           </div>
