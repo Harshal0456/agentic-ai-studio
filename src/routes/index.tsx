@@ -119,6 +119,43 @@ function Home() {
         </div>
       </section>
 
+      {/* In practice */}
+      <section className="border-t border-border bg-card/30">
+        <div className="mx-auto max-w-6xl px-5 py-24">
+          <h2 className="text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
+            What this looks like in practice
+          </h2>
+          <div className="mt-12 grid gap-5 md:grid-cols-3">
+            {[
+              {
+                label: "A transport company",
+                body: "A driver photographs a delivery receipt and sends it on WhatsApp. Within a minute it is read, checked against the trip record, and entered into the accounts system. Nobody retypes it.",
+              },
+              {
+                label: "A CA firm",
+                body: "Every month, GST purchase records are matched line by line against the books. Only the mismatches reach the accountant's desk.",
+              },
+              {
+                label: "Any business",
+                body: "The morning report your team spends two hours building is on your phone at 8am, already done.",
+              },
+            ].map((c) => (
+              <div
+                key={c.label}
+                className="rounded-xl border border-border bg-card p-7 transition-all hover:border-primary/60"
+              >
+                <h3 className="text-lg font-semibold text-foreground">
+                  {c.label}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-subtle">
+                  {c.body}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* What we do */}
       <section className="border-t border-border bg-card/30">
         <div className="mx-auto max-w-5xl px-5 py-24">
