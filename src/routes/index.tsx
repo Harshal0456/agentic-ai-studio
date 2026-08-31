@@ -10,7 +10,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Zetus AI deploys intelligent AI agents that perceive your operations, decide and act on your behalf — 24 hours a day.",
+          "Zetus AI builds software that takes over the repetitive office work your team does by hand — reading documents, entering data, chasing follow-ups, building reports.",
       },
       { property: "og:title", content: "Zetus AI — Your business. Powered by agents." },
       {
@@ -36,13 +36,13 @@ const cards = [
     icon: ShieldCheck,
     title: "Always Reliable",
     body:
-      "Every output verified before delivery. Industrial-grade accuracy. Every time.",
+      "Every output is checked against your own records before it reaches you.",
   },
   {
     icon: Lock,
     title: "Your Data — Your Control",
     body:
-      "Agents run on your own private server. Your data stays where you are — always.",
+      "Agents run on your own private server. Your data stays where you are, and is deleted after it has been processed.",
   },
   {
     icon: RefreshCw,
@@ -71,10 +71,15 @@ function Home() {
               <span className="text-subtle">Powered by agents.</span>
             </h1>
             <p className="mt-6 max-w-xl text-base text-subtle md:text-lg">
-              We are an agentic AI infrastructure company engineered for
-              businesses. We don't just build automations — we deploy autonomous
-              business systems that perceive your operations, make decisions,
-              and act on your behalf.
+              Your staff spend hours every day copying data between systems,
+              chasing paperwork, and rebuilding the same reports. We build
+              software that does that work for them — every day, on your own
+              server, without being asked.
+            </p>
+            <p className="mt-4 max-w-xl text-sm text-subtle">
+              An agent is a small piece of software that does one job start to
+              finish — reads the document, checks it against your records,
+              enters it, and tells you when something looks wrong.
             </p>
             <div className="mt-9">
               <Link
@@ -111,6 +116,43 @@ function Home() {
           <p className="mt-10 text-xl font-semibold text-primary md:text-2xl">
             This is what Zetus AI eliminates.
           </p>
+        </div>
+      </section>
+
+      {/* In practice */}
+      <section className="border-t border-border bg-card/30">
+        <div className="mx-auto max-w-6xl px-5 py-24">
+          <h2 className="text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
+            What this looks like in practice
+          </h2>
+          <div className="mt-12 grid gap-5 md:grid-cols-3">
+            {[
+              {
+                label: "A transport company",
+                body: "A driver photographs a delivery receipt and sends it on WhatsApp. Within a minute it is read, checked against the trip record, and entered into the accounts system. Nobody retypes it.",
+              },
+              {
+                label: "A CA firm",
+                body: "Every month, GST purchase records are matched line by line against the books. Only the mismatches reach the accountant's desk.",
+              },
+              {
+                label: "Any business",
+                body: "The morning report your team spends two hours building is on your phone at 8am, already done.",
+              },
+            ].map((c) => (
+              <div
+                key={c.label}
+                className="rounded-xl border border-border bg-card p-7 transition-all hover:border-primary/60"
+              >
+                <h3 className="text-lg font-semibold text-foreground">
+                  {c.label}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-subtle">
+                  {c.body}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

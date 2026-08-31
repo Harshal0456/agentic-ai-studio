@@ -34,7 +34,7 @@ const features = [
   {
     icon: Shield,
     tag: "Security",
-    title: "Zero Attack Surface",
+    title: "Nobody can reach your server from the internet",
     items: [
       "All traffic via secure Tunnels — zero open ports",
       "SSH hardened on non-standard port, cryptographic keys only",
@@ -46,7 +46,7 @@ const features = [
   {
     icon: Server,
     tag: "Isolation",
-    title: "Dedicated Per-Client VPS",
+    title: "Your own server — never shared with another business",
     items: [
       "Every client gets their own server — never shared",
       "Docker isolation per client environment",
@@ -58,19 +58,18 @@ const features = [
   {
     icon: Rocket,
     tag: "Deployment",
-    title: "15-Agent Auto-Onboarding",
+    title: "Your system is live within 24 hours",
     items: [
       "Client server ready in 24hrs",
       "Fully automated — zero human touch",
       "Intelligent fleet management across all clients",
-      "One push updates all clients simultaneously",
       "Smart deployment management",
     ],
   },
   {
     icon: Activity,
     tag: "Reliability",
-    title: "Self-Healing Infrastructure",
+    title: "If something breaks at 2am, it repairs itself and you get a message",
     items: [
       "24/7 monitoring, 60-second fault detection",
       "Self-healing watchdog systems",
@@ -82,7 +81,7 @@ const features = [
   {
     icon: KeyRound,
     tag: "Secrets",
-    title: "Vault-Based Credential Management",
+    title: "Your passwords and keys stay locked in a vault, never written into code",
     items: [
       "All API keys stored securely in digital vaults",
       "Per-client secret environment — never mixed",
@@ -93,7 +92,7 @@ const features = [
   {
     icon: Brain,
     tag: "Intelligence",
-    title: "Agentic AI Layer",
+    title: "Every answer is checked against your real data before you see it",
     items: [
       "Anti-hallucination protocols in every automation",
       "Intelligent Model routing",
@@ -139,9 +138,9 @@ function WhyChooseZetusAI() {
             <span className="text-primary italic">businesses.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-base text-subtle md:text-lg">
-            We don't build generic automations. We deploy fully autonomous
-            business systems — secured, monitored, and self-healing — so your
-            operations run without human intervention.
+            Most automation tools run your business's data on shared
+            infrastructure. We give every client their own private server —
+            set up, secured, monitored, and repaired automatically.
           </p>
         </div>
       </section>
