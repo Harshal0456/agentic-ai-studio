@@ -71,15 +71,7 @@ function Home() {
               <span className="text-subtle">Automated by agents.</span>
             </h1>
             <p className="mt-6 max-w-xl text-base text-subtle md:text-lg">
-              Your staff spend hours every day copying data between systems,
-              chasing paperwork, and rebuilding the same reports. We build
-              software that does that work for them — every day, on your own
-              server, without being asked.
-            </p>
-            <p className="mt-4 max-w-xl text-sm text-subtle">
-              An agent is a small piece of software that does one job start to
-              finish — reads the document, checks it against your records,
-              enters it, and tells you when something looks wrong.
+              The repetitive office work your team does by hand, done automatically. Every day.
             </p>
             <div className="mt-9">
               <Link
@@ -125,6 +117,9 @@ function Home() {
           <h2 className="text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
             What this looks like in practice
           </h2>
+          <p className="mt-4 max-w-2xl text-base text-subtle">
+            An agent is a small piece of software that does one job start to finish — reads the document, checks it against your records, enters it, and tells you when something looks wrong.
+          </p>
           <div className="mt-12 grid gap-5 md:grid-cols-3">
             {[
               {
