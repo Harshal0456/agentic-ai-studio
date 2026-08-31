@@ -10,7 +10,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Zetus AI deploys intelligent AI agents that perceive your operations, decide and act on your behalf — 24 hours a day.",
+          "Zetus AI builds software that takes over the repetitive office work your team does by hand — reading documents, entering data, chasing follow-ups, building reports.",
       },
       { property: "og:title", content: "Zetus AI — Your business. Powered by agents." },
       {
@@ -36,13 +36,13 @@ const cards = [
     icon: ShieldCheck,
     title: "Always Reliable",
     body:
-      "Every output verified before delivery. Industrial-grade accuracy. Every time.",
+      "Every output is checked against your own records before it reaches you.",
   },
   {
     icon: Lock,
     title: "Your Data — Your Control",
     body:
-      "Agents run on your own private server. Your data stays where you are — always.",
+      "Agents run on your own private server. Your data stays where you are, and is deleted after it has been processed.",
   },
   {
     icon: RefreshCw,
@@ -71,10 +71,15 @@ function Home() {
               <span className="text-subtle">Powered by agents.</span>
             </h1>
             <p className="mt-6 max-w-xl text-base text-subtle md:text-lg">
-              We are an agentic AI infrastructure company engineered for
-              businesses. We don't just build automations — we deploy autonomous
-              business systems that perceive your operations, make decisions,
-              and act on your behalf.
+              Your staff spend hours every day copying data between systems,
+              chasing paperwork, and rebuilding the same reports. We build
+              software that does that work for them — every day, on your own
+              server, without being asked.
+            </p>
+            <p className="mt-4 max-w-xl text-sm text-subtle">
+              An agent is a small piece of software that does one job start to
+              finish — reads the document, checks it against your records,
+              enters it, and tells you when something looks wrong.
             </p>
             <div className="mt-9">
               <Link
