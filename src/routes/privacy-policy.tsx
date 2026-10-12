@@ -16,7 +16,9 @@ export const Route = createFileRoute("/privacy-policy")({
         content:
           "Privacy Policy for Zetus AI (DSH Innovations Private Limited).",
       },
+      { property: "og:url", content: "https://zetusai.com/privacy-policy" },
     ],
+    links: [{ rel: "canonical", href: "https://zetusai.com/privacy-policy" }],
   }),
   component: PrivacyPolicy,
 });

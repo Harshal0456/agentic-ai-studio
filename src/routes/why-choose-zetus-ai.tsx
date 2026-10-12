@@ -25,7 +25,9 @@ export const Route = createFileRoute("/why-choose-zetus-ai")({
         content:
           "Enterprise-grade agentic AI infrastructure — secured, monitored, and self-healing.",
       },
+      { property: "og:url", content: "https://zetusai.com/why-choose-zetus-ai" },
     ],
+    links: [{ rel: "canonical", href: "https://zetusai.com/why-choose-zetus-ai" }],
   }),
   component: WhyChooseZetusAI,
 });

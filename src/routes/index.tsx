@@ -18,7 +18,9 @@ export const Route = createFileRoute("/")({
         content:
           "Agentic AI for Indian businesses. Reliable, always on, engineered to last.",
       },
+      { property: "og:url", content: "https://zetusai.com/" },
     ],
+    links: [{ rel: "canonical", href: "https://zetusai.com/" }],
   }),
   component: Home,
 });
