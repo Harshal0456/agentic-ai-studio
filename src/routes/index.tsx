@@ -3,6 +3,8 @@ import { Layout } from "@/components/site/Layout";
 import { AuroraGraphic } from "@/components/site/AuroraGraphic";
 import { ArrowRight, ShieldCheck, Lock, RefreshCw, Zap } from "lucide-react";
 
+const trustedFor = ["Privacy", "Security", "Compliance"];
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -67,25 +69,60 @@ function Home() {
       <section className="relative overflow-hidden bg-hero">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 pb-24 pt-20 md:grid-cols-2 md:pt-28">
           <div className="animate-fade-up">
-            <h1 className="text-4xl font-semibold leading-[1.1] tracking-tight text-foreground md:text-6xl">
+            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card/40 px-4 py-1.5">
+              <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+              <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-subtle">
+                Infrastructure for Indian Enterprises
+              </span>
+            </div>
+            <h1 className="mt-6 text-4xl font-semibold leading-[1.1] tracking-tight text-foreground md:text-6xl">
               Your business.
               <br />
-              <span className="text-subtle">Automated by agents.</span>
+              <span className="text-gradient-hero">Automated by agents.</span>
             </h1>
             <p className="mt-6 max-w-xl text-base text-subtle md:text-lg">
               The repetitive office work your team does by hand, done automatically. Every day.
             </p>
-            <div className="mt-9">
+            <div className="mt-9 flex flex-wrap items-center gap-4">
               <Link
                 to="/contact"
                 className="inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3.5 text-sm font-medium text-primary-foreground transition-all hover:bg-primary-hover"
               >
                 Book a Free Discovery Call <ArrowRight size={16} />
               </Link>
+              <Link
+                to="/why-choose-zetus-ai"
+                className="inline-flex items-center gap-2 rounded-md border border-border px-6 py-3.5 text-sm font-medium text-foreground transition-all hover:border-primary/60 hover:bg-card/60"
+              >
+                Why Zetus AI
+              </Link>
+            </div>
+            <div className="mt-12 flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-border pt-6">
+              <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-subtle">
+                Trusted for
+              </span>
+              {trustedFor.map((t) => (
+                <span key={t} className="text-sm font-medium text-foreground">
+                  {t}
+                </span>
+              ))}
             </div>
           </div>
           <div className="relative mx-auto h-80 w-80 animate-fade-in md:h-[520px] md:w-[520px]">
             <AuroraGraphic />
+            <div className="animate-float-badge absolute -bottom-2 -left-4 flex items-center gap-3 rounded-xl border border-border bg-card/80 px-4 py-3 backdrop-blur md:-left-10">
+              <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/15">
+                <ShieldCheck size={18} className="text-primary" />
+              </span>
+              <span>
+                <span className="block font-mono text-[10px] uppercase tracking-[0.18em] text-subtle">
+                  Agent Health
+                </span>
+                <span className="block text-sm font-semibold text-foreground">
+                  Monitored &amp; Self-Healing
+                </span>
+              </span>
+            </div>
           </div>
         </div>
       </section>
