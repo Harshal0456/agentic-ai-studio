@@ -18,7 +18,9 @@ export const Route = createFileRoute("/contact")({
         property: "og:description",
         content: "Book a free discovery call with Zetus AI.",
       },
+      { property: "og:url", content: "https://zetusai.com/contact" },
     ],
+    links: [{ rel: "canonical", href: "https://zetusai.com/contact" }],
   }),
   component: Contact,
 });

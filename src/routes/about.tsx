@@ -16,7 +16,9 @@ export const Route = createFileRoute("/about")({
         property: "og:description",
         content: "Engineer first. Verified always. Long term partners.",
       },
+      { property: "og:url", content: "https://zetusai.com/about" },
     ],
+    links: [{ rel: "canonical", href: "https://zetusai.com/about" }],
   }),
   component: About,
 });

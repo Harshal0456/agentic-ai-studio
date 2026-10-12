@@ -16,7 +16,9 @@ export const Route = createFileRoute("/terms-of-service")({
         content:
           "Terms of Service for Zetus AI (DSH Innovations Private Limited).",
       },
+      { property: "og:url", content: "https://zetusai.com/terms-of-service" },
     ],
+    links: [{ rel: "canonical", href: "https://zetusai.com/terms-of-service" }],
   }),
   component: TermsOfService,
 });
