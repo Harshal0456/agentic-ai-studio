@@ -1,4 +1,5 @@
 # Roadmap
 
-- [ ] Diagnose and fix Google Search Console "Duplicate without user-selected canonical" error
-- [ ] Present hero design options to user and implement chosen direction (previews saved in Files/design-previews)
+- [x] Diagnose Google Search Console "Duplicate without user-selected canonical" — cause: no canonical tags
+- [x] Add self-referencing canonical + og:url to all six pages; needs publish to go live
+- [ ] User to pick hero design direction (previews in Files/design-previews); implement after choice
